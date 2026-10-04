@@ -23,7 +23,21 @@
         "SPLIT_RECORDED",
         "ANOMALY_FLAGGED",
         "RULING_SIGNED",
-        "RESULT_REPUBLISHED"
+        "RESULT_REPUBLISHED",
+        "FORMAT_REGISTERED",
+        "WAVE_STARTED",
+        "PARTNER_REPLACED",
+        "DEVICE_REGISTERED",
+        "DEVICE_STATUS_RECORDED",
+        "EVIDENCE_REJECTED",
+        "SEGMENT_ASSEMBLED",
+        "MEDICAL_STOP_ISSUED",
+        "MEDICAL_RESUME_AUTHORIZED",
+        "APPEAL_FILED",
+        "APPEAL_DECIDED",
+        "RESULT_LOCKED",
+        "CERTIFICATE_ISSUED",
+        "AWARD_REROLLED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +46,14 @@
         "race_format",
         "competition_entry",
         "split_evidence",
-        "result_release"
+        "result_release",
+        "device",
+        "review_case",
+        "medical_hold",
+        "ruling",
+        "appeal",
+        "award",
+        "certificate"
       ]
     },
     "aggregate_id": {
@@ -50,6 +71,15 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "prev_hash": {
+      "type": "string"
+    },
+    "chain_hash": {
+      "type": "string"
     }
   },
   "additionalProperties": true

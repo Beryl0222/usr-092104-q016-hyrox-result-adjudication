@@ -1,5 +1,5 @@
 [project]
-name = "domain-event-contract"
-version = "0.1.0"
-description = "领域事件基础校验"
+name = "hybrid-finish-adjudication"
+version = "0.2.0"
+description = "混合体能赛完赛裁决后端：证据按真实时间组装、异常待审、版本化成绩发布"
 requires-python = ">=3.11"

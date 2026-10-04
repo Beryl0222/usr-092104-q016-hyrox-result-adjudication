@@ -1,9 +1,23 @@
 {
   "event_id": "sample-016",
   "event_type": "ENTRY_CONFIRMED",
-  "aggregate_type": "race_format",
-  "aggregate_id": "aggregate-016",
-  "occurred_at": "2026-09-20T12:00:00+08:00",
+  "aggregate_type": "competition_entry",
+  "aggregate_id": "sample-entry-016",
+  "occurred_at": "2026-10-04T08:00:00+08:00",
   "version": 1,
-  "summary": "混合体能完赛裁决领域样例"
+  "summary": "混合体能完赛裁决领域样例：确认报名",
+  "payload": {
+    "format_id": "mx2026",
+    "wave_id": "W1",
+    "category": "pair_mixed",
+    "team_kind": "pair",
+    "lane": "3",
+    "bib": "2001",
+    "athletes": [
+      {"athlete_id": "A1", "role": "athlete"},
+      {"athlete_id": "A2", "role": "athlete"}
+    ],
+    "chip_ids": ["chip-A1", "chip-A2"],
+    "device_ids": ["dev-rig-3", "dev-sled-3"]
+  }
 }
