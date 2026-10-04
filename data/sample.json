@@ -1,7 +1,7 @@
 {
   "event_id": "sample-016",
   "event_type": "ENTRY_CONFIRMED",
-  "aggregate_type": "race_format",
+  "aggregate_type": "competition_entry",
   "aggregate_id": "aggregate-016",
   "occurred_at": "2026-09-20T12:00:00+08:00",
   "version": 1,

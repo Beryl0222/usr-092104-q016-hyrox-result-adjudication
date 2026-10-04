@@ -1,0 +1,1187 @@
+[
+  {
+    "event_id": "evt-001",
+    "event_type": "FORMAT_PUBLISHED",
+    "aggregate_type": "race_format",
+    "aggregate_id": "fmt-hybrid-16",
+    "occurred_at": "2026-09-19T10:00:00+08:00",
+    "version": 1,
+    "summary": "发布赛制：16 个交替环节",
+    "payload": {
+      "segments": [
+        {
+          "index": 0,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 1,
+          "kind": "station",
+          "station_id": "ST1"
+        },
+        {
+          "index": 2,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 3,
+          "kind": "station",
+          "station_id": "ST2"
+        },
+        {
+          "index": 4,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 5,
+          "kind": "station",
+          "station_id": "ST3"
+        },
+        {
+          "index": 6,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 7,
+          "kind": "station",
+          "station_id": "ST4"
+        },
+        {
+          "index": 8,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 9,
+          "kind": "station",
+          "station_id": "ST5"
+        },
+        {
+          "index": 10,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 11,
+          "kind": "station",
+          "station_id": "ST6"
+        },
+        {
+          "index": 12,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 13,
+          "kind": "station",
+          "station_id": "ST7"
+        },
+        {
+          "index": 14,
+          "kind": "run",
+          "station_id": null
+        },
+        {
+          "index": 15,
+          "kind": "station",
+          "station_id": "ST8"
+        }
+      ],
+      "groups": [
+        "混双组",
+        "个人组"
+      ],
+      "waves": [
+        {
+          "wave_id": "W1",
+          "starts_at": "2026-09-20T09:00:00+08:00"
+        }
+      ],
+      "rules": {
+        "late_report_grace_seconds": 120,
+        "award_places": 1
+      }
+    }
+  },
+  {
+    "event_id": "evt-002",
+    "event_type": "APPARATUS_STATUS_CHANGED",
+    "aggregate_type": "apparatus",
+    "aggregate_id": "AP-L3",
+    "occurred_at": "2026-09-19T08:00:00+08:00",
+    "version": 1,
+    "summary": "L3 赛道器械就绪",
+    "payload": {
+      "lane": "L3",
+      "status": "ok"
+    }
+  },
+  {
+    "event_id": "evt-003",
+    "event_type": "APPARATUS_STATUS_CHANGED",
+    "aggregate_type": "apparatus",
+    "aggregate_id": "AP-L4",
+    "occurred_at": "2026-09-19T08:01:00+08:00",
+    "version": 1,
+    "summary": "L4 赛道器械就绪",
+    "payload": {
+      "lane": "L4",
+      "status": "ok"
+    }
+  },
+  {
+    "event_id": "evt-004",
+    "event_type": "APPARATUS_STATUS_CHANGED",
+    "aggregate_type": "apparatus",
+    "aggregate_id": "AP-L5",
+    "occurred_at": "2026-09-19T08:02:00+08:00",
+    "version": 1,
+    "summary": "L5 赛道器械就绪",
+    "payload": {
+      "lane": "L5",
+      "status": "ok"
+    }
+  },
+  {
+    "event_id": "evt-005",
+    "event_type": "ENTRY_CONFIRMED",
+    "aggregate_type": "competition_entry",
+    "aggregate_id": "e1",
+    "occurred_at": "2026-09-19T12:00:00+08:00",
+    "version": 1,
+    "summary": "确认报名 e1 v1",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "group": "混双组",
+      "wave": "W1",
+      "lane": "L3",
+      "athlete_ids": [
+        "张明",
+        "李华"
+      ],
+      "partner_eligibility": {
+        "rule": "同组配对",
+        "eligible": true,
+        "checked_by": "资格审查-02"
+      }
+    }
+  },
+  {
+    "event_id": "evt-006",
+    "event_type": "ENTRY_CONFIRMED",
+    "aggregate_type": "competition_entry",
+    "aggregate_id": "e2",
+    "occurred_at": "2026-09-19T12:05:00+08:00",
+    "version": 1,
+    "summary": "确认报名 e2 v1",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "group": "混双组",
+      "wave": "W1",
+      "lane": "L4",
+      "athlete_ids": [
+        "陈强",
+        "刘洋"
+      ],
+      "partner_eligibility": {
+        "rule": "同组配对",
+        "eligible": true,
+        "checked_by": "资格审查-02"
+      }
+    }
+  },
+  {
+    "event_id": "evt-007",
+    "event_type": "ENTRY_CONFIRMED",
+    "aggregate_type": "competition_entry",
+    "aggregate_id": "e3",
+    "occurred_at": "2026-09-19T12:10:00+08:00",
+    "version": 1,
+    "summary": "确认报名 e3 v1",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "group": "个人组",
+      "wave": "W1",
+      "lane": "L5",
+      "athlete_ids": [
+        "赵敏"
+      ],
+      "partner_eligibility": {
+        "rule": "个人参赛",
+        "eligible": true,
+        "checked_by": "资格审查-02"
+      }
+    }
+  },
+  {
+    "event_id": "evt-008",
+    "event_type": "ENTRY_CONFIRMED",
+    "aggregate_type": "competition_entry",
+    "aggregate_id": "e1",
+    "occurred_at": "2026-09-20T08:30:00+08:00",
+    "version": 2,
+    "summary": "确认报名 e1 v2",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "group": "混双组",
+      "wave": "W1",
+      "lane": "L3",
+      "athlete_ids": [
+        "张明",
+        "王芳"
+      ],
+      "partner_eligibility": {
+        "rule": "赛前更换需医疗证明",
+        "eligible": true,
+        "checked_by": "资格审查-02",
+        "note": "李华伤退，王芳替补"
+      }
+    }
+  },
+  {
+    "event_id": "evt-e1-s0",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s0",
+    "occurred_at": "2026-09-20T09:05:00+08:00",
+    "version": 1,
+    "summary": "e1 第0环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 0,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-0"
+    }
+  },
+  {
+    "event_id": "evt-e1-s1",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s1",
+    "occurred_at": "2026-09-20T09:10:00+08:00",
+    "version": 1,
+    "summary": "e1 第1环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 1,
+      "source": "station_referee",
+      "device_seq": "e1-dev-1"
+    }
+  },
+  {
+    "event_id": "evt-e1-s2",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s2",
+    "occurred_at": "2026-09-20T09:15:00+08:00",
+    "version": 1,
+    "summary": "e1 第2环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 2,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-2"
+    }
+  },
+  {
+    "event_id": "evt-e1-s3",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s3",
+    "occurred_at": "2026-09-20T09:20:00+08:00",
+    "version": 1,
+    "summary": "e1 第3环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 3,
+      "source": "station_referee",
+      "device_seq": "e1-dev-3"
+    }
+  },
+  {
+    "event_id": "evt-e1-s3-dup",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s3-dup",
+    "occurred_at": "2026-09-20T09:20:00+08:00",
+    "version": 1,
+    "summary": "e1 第3环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 3,
+      "source": "station_referee",
+      "device_seq": "e1-dev-3",
+      "reported_at": "2026-09-20T09:20:02+08:00"
+    }
+  },
+  {
+    "event_id": "evt-e1-s4",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s4",
+    "occurred_at": "2026-09-20T09:25:00+08:00",
+    "version": 1,
+    "summary": "e1 第4环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 4,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-4"
+    }
+  },
+  {
+    "event_id": "evt-e1-s5",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s5",
+    "occurred_at": "2026-09-20T09:30:00+08:00",
+    "version": 1,
+    "summary": "e1 第5环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 5,
+      "source": "station_referee",
+      "device_seq": "e1-dev-5",
+      "reported_at": "2026-09-20T09:40:00+08:00"
+    }
+  },
+  {
+    "event_id": "evt-e1-s6",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s6",
+    "occurred_at": "2026-09-20T09:35:00+08:00",
+    "version": 1,
+    "summary": "e1 第6环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 6,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-6"
+    }
+  },
+  {
+    "event_id": "evt-e1-s7",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s7",
+    "occurred_at": "2026-09-20T09:40:00+08:00",
+    "version": 1,
+    "summary": "e1 第7环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 7,
+      "source": "station_referee",
+      "device_seq": "e1-dev-7"
+    }
+  },
+  {
+    "event_id": "evt-e1-s8",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s8",
+    "occurred_at": "2026-09-20T09:45:00+08:00",
+    "version": 1,
+    "summary": "e1 第8环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 8,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-8"
+    }
+  },
+  {
+    "event_id": "evt-e1-s9",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s9",
+    "occurred_at": "2026-09-20T09:50:00+08:00",
+    "version": 1,
+    "summary": "e1 第9环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 9,
+      "source": "station_referee",
+      "device_seq": "e1-dev-9"
+    }
+  },
+  {
+    "event_id": "evt-ev-stray-l4",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "ev-stray-l4",
+    "occurred_at": "2026-09-20T09:50:40+08:00",
+    "version": 1,
+    "summary": "e1 第9环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L4",
+      "segment_index": 9,
+      "source": "apparatus_sensor",
+      "device_seq": "AP4-0092",
+      "metrics": {
+        "reps": 30
+      },
+      "apparatus_id": "AP-L4"
+    }
+  },
+  {
+    "event_id": "evt-e1-s10",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s10",
+    "occurred_at": "2026-09-20T09:55:00+08:00",
+    "version": 1,
+    "summary": "e1 第10环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 10,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-10"
+    }
+  },
+  {
+    "event_id": "evt-e1-s11",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s11",
+    "occurred_at": "2026-09-20T10:00:00+08:00",
+    "version": 1,
+    "summary": "e1 第11环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 11,
+      "source": "station_referee",
+      "device_seq": "e1-dev-11"
+    }
+  },
+  {
+    "event_id": "evt-e1-s12",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s12",
+    "occurred_at": "2026-09-20T10:05:00+08:00",
+    "version": 1,
+    "summary": "e1 第12环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 12,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-12"
+    }
+  },
+  {
+    "event_id": "evt-e1-s13",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s13",
+    "occurred_at": "2026-09-20T10:10:00+08:00",
+    "version": 1,
+    "summary": "e1 第13环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 13,
+      "source": "station_referee",
+      "device_seq": "e1-dev-13"
+    }
+  },
+  {
+    "event_id": "evt-e1-s14",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s14",
+    "occurred_at": "2026-09-20T10:15:00+08:00",
+    "version": 1,
+    "summary": "e1 第14环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 14,
+      "source": "timing_chip",
+      "device_seq": "e1-dev-14"
+    }
+  },
+  {
+    "event_id": "evt-e1-s15",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e1-s15",
+    "occurred_at": "2026-09-20T10:20:00+08:00",
+    "version": 1,
+    "summary": "e1 第15环节记录",
+    "payload": {
+      "entry_id": "e1",
+      "lane": "L3",
+      "segment_index": 15,
+      "source": "station_referee",
+      "device_seq": "e1-dev-15"
+    }
+  },
+  {
+    "event_id": "evt-e2-s0",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s0",
+    "occurred_at": "2026-09-20T09:05:40+08:00",
+    "version": 1,
+    "summary": "e2 第0环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 0,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-0"
+    }
+  },
+  {
+    "event_id": "evt-e2-s1",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s1",
+    "occurred_at": "2026-09-20T09:10:40+08:00",
+    "version": 1,
+    "summary": "e2 第1环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 1,
+      "source": "station_referee",
+      "device_seq": "e2-dev-1"
+    }
+  },
+  {
+    "event_id": "evt-e2-s2",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s2",
+    "occurred_at": "2026-09-20T09:15:40+08:00",
+    "version": 1,
+    "summary": "e2 第2环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 2,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-2"
+    }
+  },
+  {
+    "event_id": "evt-e2-s3",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s3",
+    "occurred_at": "2026-09-20T09:20:40+08:00",
+    "version": 1,
+    "summary": "e2 第3环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 3,
+      "source": "station_referee",
+      "device_seq": "e2-dev-3"
+    }
+  },
+  {
+    "event_id": "evt-e2-s4",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s4",
+    "occurred_at": "2026-09-20T09:25:40+08:00",
+    "version": 1,
+    "summary": "e2 第4环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 4,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-4"
+    }
+  },
+  {
+    "event_id": "evt-e2-s5",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s5",
+    "occurred_at": "2026-09-20T09:30:40+08:00",
+    "version": 1,
+    "summary": "e2 第5环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 5,
+      "source": "station_referee",
+      "device_seq": "e2-dev-5"
+    }
+  },
+  {
+    "event_id": "evt-e2-s6",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s6",
+    "occurred_at": "2026-09-20T09:35:40+08:00",
+    "version": 1,
+    "summary": "e2 第6环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 6,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-6"
+    }
+  },
+  {
+    "event_id": "evt-e2-s7",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s7",
+    "occurred_at": "2026-09-20T09:40:40+08:00",
+    "version": 1,
+    "summary": "e2 第7环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 7,
+      "source": "station_referee",
+      "device_seq": "e2-dev-7"
+    }
+  },
+  {
+    "event_id": "evt-e2-s8",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s8",
+    "occurred_at": "2026-09-20T09:45:40+08:00",
+    "version": 1,
+    "summary": "e2 第8环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 8,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-8"
+    }
+  },
+  {
+    "event_id": "evt-e2-s10",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s10",
+    "occurred_at": "2026-09-20T09:55:40+08:00",
+    "version": 1,
+    "summary": "e2 第10环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 10,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-10"
+    }
+  },
+  {
+    "event_id": "evt-e2-s11",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s11",
+    "occurred_at": "2026-09-20T10:00:40+08:00",
+    "version": 1,
+    "summary": "e2 第11环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 11,
+      "source": "station_referee",
+      "device_seq": "e2-dev-11"
+    }
+  },
+  {
+    "event_id": "evt-e2-s12",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s12",
+    "occurred_at": "2026-09-20T10:05:40+08:00",
+    "version": 1,
+    "summary": "e2 第12环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 12,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-12"
+    }
+  },
+  {
+    "event_id": "evt-e2-s13",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s13",
+    "occurred_at": "2026-09-20T10:10:40+08:00",
+    "version": 1,
+    "summary": "e2 第13环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 13,
+      "source": "station_referee",
+      "device_seq": "e2-dev-13"
+    }
+  },
+  {
+    "event_id": "evt-e2-s14",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s14",
+    "occurred_at": "2026-09-20T10:15:40+08:00",
+    "version": 1,
+    "summary": "e2 第14环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 14,
+      "source": "timing_chip",
+      "device_seq": "e2-dev-14"
+    }
+  },
+  {
+    "event_id": "evt-e2-s15",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e2-s15",
+    "occurred_at": "2026-09-20T10:20:40+08:00",
+    "version": 1,
+    "summary": "e2 第15环节记录",
+    "payload": {
+      "entry_id": "e2",
+      "lane": "L4",
+      "segment_index": 15,
+      "source": "station_referee",
+      "device_seq": "e2-dev-15"
+    }
+  },
+  {
+    "event_id": "evt-e3-s0",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s0",
+    "occurred_at": "2026-09-20T09:05:00+08:00",
+    "version": 1,
+    "summary": "e3 第0环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 0,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-0"
+    }
+  },
+  {
+    "event_id": "evt-e3-s1",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s1",
+    "occurred_at": "2026-09-20T09:10:00+08:00",
+    "version": 1,
+    "summary": "e3 第1环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 1,
+      "source": "station_referee",
+      "device_seq": "e3-dev-1"
+    }
+  },
+  {
+    "event_id": "evt-e3-s2",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s2",
+    "occurred_at": "2026-09-20T09:15:00+08:00",
+    "version": 1,
+    "summary": "e3 第2环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 2,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-2"
+    }
+  },
+  {
+    "event_id": "evt-e3-s3",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s3",
+    "occurred_at": "2026-09-20T09:20:00+08:00",
+    "version": 1,
+    "summary": "e3 第3环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 3,
+      "source": "station_referee",
+      "device_seq": "e3-dev-3"
+    }
+  },
+  {
+    "event_id": "evt-e3-s4",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s4",
+    "occurred_at": "2026-09-20T09:25:00+08:00",
+    "version": 1,
+    "summary": "e3 第4环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 4,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-4"
+    }
+  },
+  {
+    "event_id": "evt-e3-s5",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s5",
+    "occurred_at": "2026-09-20T09:30:00+08:00",
+    "version": 1,
+    "summary": "e3 第5环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 5,
+      "source": "station_referee",
+      "device_seq": "e3-dev-5"
+    }
+  },
+  {
+    "event_id": "evt-e3-s6",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s6",
+    "occurred_at": "2026-09-20T09:35:00+08:00",
+    "version": 1,
+    "summary": "e3 第6环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 6,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-6"
+    }
+  },
+  {
+    "event_id": "evt-e3-s7",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s7",
+    "occurred_at": "2026-09-20T09:40:00+08:00",
+    "version": 1,
+    "summary": "e3 第7环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 7,
+      "source": "station_referee",
+      "device_seq": "e3-dev-7"
+    }
+  },
+  {
+    "event_id": "evt-050",
+    "event_type": "MEDICAL_STOPPED",
+    "aggregate_type": "competition_entry",
+    "aggregate_id": "e3",
+    "occurred_at": "2026-09-20T09:40:30+08:00",
+    "version": 1,
+    "summary": "e3 医疗停止",
+    "payload": {
+      "reason": "赛道医疗点处置"
+    }
+  },
+  {
+    "event_id": "evt-051",
+    "event_type": "RESULT_REPUBLISHED",
+    "aggregate_type": "result_release",
+    "aggregate_id": "rel-2026",
+    "occurred_at": "2026-09-20T10:30:00+08:00",
+    "version": 1,
+    "summary": "初榜发布",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "status": "initial"
+    }
+  },
+  {
+    "event_id": "evt-052",
+    "event_type": "RULING_SIGNED",
+    "aggregate_type": "ruling",
+    "aggregate_id": "r1",
+    "occurred_at": "2026-09-20T10:35:00+08:00",
+    "version": 1,
+    "summary": "串道记录改属 e2",
+    "payload": {
+      "category": "equipment_failure",
+      "referee_id": "EQ-07",
+      "referee_role": "equipment_referee",
+      "entry_id": "e1",
+      "anomaly_ids": [
+        "ANX-1"
+      ],
+      "outcome": "reassign_evidence",
+      "reassign_to": "e2",
+      "reason": "器械传感器串道，记录实际归属 L4 赛道"
+    }
+  },
+  {
+    "event_id": "evt-053",
+    "event_type": "RESULT_REPUBLISHED",
+    "aggregate_type": "result_release",
+    "aggregate_id": "rel-2026",
+    "occurred_at": "2026-09-20T10:40:00+08:00",
+    "version": 2,
+    "summary": "申诉中发布",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "status": "appeal_pending"
+    }
+  },
+  {
+    "event_id": "evt-054",
+    "event_type": "RETURN_AUTHORIZED",
+    "aggregate_type": "competition_entry",
+    "aggregate_id": "e3",
+    "occurred_at": "2026-09-20T10:45:00+08:00",
+    "version": 1,
+    "summary": "e3 恢复参赛",
+    "payload": {
+      "authorized_by": "医疗官-07"
+    }
+  },
+  {
+    "event_id": "evt-e3-s8",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s8",
+    "occurred_at": "2026-09-20T10:50:00+08:00",
+    "version": 1,
+    "summary": "e3 第8环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 8,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-8"
+    }
+  },
+  {
+    "event_id": "evt-e3-s9",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s9",
+    "occurred_at": "2026-09-20T10:55:00+08:00",
+    "version": 1,
+    "summary": "e3 第9环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 9,
+      "source": "station_referee",
+      "device_seq": "e3-dev-9"
+    }
+  },
+  {
+    "event_id": "evt-e3-s10",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s10",
+    "occurred_at": "2026-09-20T11:00:00+08:00",
+    "version": 1,
+    "summary": "e3 第10环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 10,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-10"
+    }
+  },
+  {
+    "event_id": "evt-e3-s11",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s11",
+    "occurred_at": "2026-09-20T11:05:00+08:00",
+    "version": 1,
+    "summary": "e3 第11环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 11,
+      "source": "station_referee",
+      "device_seq": "e3-dev-11"
+    }
+  },
+  {
+    "event_id": "evt-e3-s12",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s12",
+    "occurred_at": "2026-09-20T11:10:00+08:00",
+    "version": 1,
+    "summary": "e3 第12环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 12,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-12"
+    }
+  },
+  {
+    "event_id": "evt-e3-s13",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s13",
+    "occurred_at": "2026-09-20T11:15:00+08:00",
+    "version": 1,
+    "summary": "e3 第13环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 13,
+      "source": "station_referee",
+      "device_seq": "e3-dev-13"
+    }
+  },
+  {
+    "event_id": "evt-e3-s14",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s14",
+    "occurred_at": "2026-09-20T11:20:00+08:00",
+    "version": 1,
+    "summary": "e3 第14环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 14,
+      "source": "timing_chip",
+      "device_seq": "e3-dev-14"
+    }
+  },
+  {
+    "event_id": "evt-e3-s15",
+    "event_type": "SPLIT_RECORDED",
+    "aggregate_type": "split_evidence",
+    "aggregate_id": "e3-s15",
+    "occurred_at": "2026-09-20T11:25:00+08:00",
+    "version": 1,
+    "summary": "e3 第15环节记录",
+    "payload": {
+      "entry_id": "e3",
+      "lane": "L5",
+      "segment_index": 15,
+      "source": "station_referee",
+      "device_seq": "e3-dev-15"
+    }
+  },
+  {
+    "event_id": "evt-ext-1",
+    "event_type": "ANOMALY_FLAGGED",
+    "aggregate_type": "competition_entry",
+    "aggregate_id": "e3",
+    "occurred_at": "2026-09-20T11:30:00+08:00",
+    "version": 1,
+    "summary": "外部报告：志愿者指引问题",
+    "payload": {
+      "anomaly_id": "EXT-1",
+      "entry_id": "e3",
+      "kind": "external_report",
+      "detail": "志愿者指引错误导致绕行",
+      "evidence_ids": []
+    }
+  },
+  {
+    "event_id": "evt-064",
+    "event_type": "RULING_SIGNED",
+    "aggregate_type": "ruling",
+    "aggregate_id": "r2",
+    "occurred_at": "2026-09-20T11:35:00+08:00",
+    "version": 1,
+    "summary": "志愿者误导减免",
+    "payload": {
+      "category": "volunteer_misdirection",
+      "referee_id": "CR-03",
+      "referee_role": "course_referee",
+      "entry_id": "e3",
+      "anomaly_ids": [
+        "EXT-1"
+      ],
+      "outcome": "time_adjustment",
+      "credit_seconds": 60,
+      "reason": "志愿者误导绕行，减免60秒"
+    }
+  },
+  {
+    "event_id": "evt-065",
+    "event_type": "RESULT_REPUBLISHED",
+    "aggregate_type": "result_release",
+    "aggregate_id": "rel-2026",
+    "occurred_at": "2026-09-20T11:40:00+08:00",
+    "version": 3,
+    "summary": "正式成绩发布",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "status": "official"
+    }
+  },
+  {
+    "event_id": "evt-066",
+    "event_type": "RULING_SIGNED",
+    "aggregate_type": "ruling",
+    "aggregate_id": "r3",
+    "occurred_at": "2026-09-20T11:50:00+08:00",
+    "version": 1,
+    "summary": "视频复核处罚",
+    "payload": {
+      "category": "athlete_violation",
+      "referee_id": "CR-11",
+      "referee_role": "competition_referee",
+      "entry_id": "e1",
+      "anomaly_ids": [],
+      "outcome": "penalty",
+      "penalty_seconds": 60,
+      "reason": "视频复核确认器械区违规，加罚60秒"
+    }
+  },
+  {
+    "event_id": "evt-067",
+    "event_type": "RESULT_REPUBLISHED",
+    "aggregate_type": "result_release",
+    "aggregate_id": "rel-2026",
+    "occurred_at": "2026-09-20T11:55:00+08:00",
+    "version": 4,
+    "summary": "改判后正式成绩",
+    "payload": {
+      "format_id": "fmt-hybrid-16",
+      "status": "official"
+    }
+  }
+]

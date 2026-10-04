@@ -23,7 +23,11 @@
         "SPLIT_RECORDED",
         "ANOMALY_FLAGGED",
         "RULING_SIGNED",
-        "RESULT_REPUBLISHED"
+        "RESULT_REPUBLISHED",
+        "FORMAT_PUBLISHED",
+        "APPARATUS_STATUS_CHANGED",
+        "MEDICAL_STOPPED",
+        "RETURN_AUTHORIZED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +36,9 @@
         "race_format",
         "competition_entry",
         "split_evidence",
-        "result_release"
+        "result_release",
+        "apparatus",
+        "ruling"
       ]
     },
     "aggregate_id": {
@@ -50,6 +56,9 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
     }
   },
   "additionalProperties": true
